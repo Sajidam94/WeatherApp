@@ -1,18 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/cityText"
+        android:textColor="#fff"
+        android:text="Spokane,US"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="wrap_content" />
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/thumblineIcon"
+        android:layout_below="@id/cityText"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/tempTxt"
+        android:textStyle="normal"
+        android:text="12Deg"
+        android:layout_below="@id/cityText"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textSize="45sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/windTxt"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:text="Wind"
+        android:layout_below="@id/thumblineIcon"
+        android:layout_marginTop="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/cloudTxt"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:layout_below="@id/windTxt"
+        android:text="Cloud"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/pressureTxt"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:layout_below="@id/cloudTxt"
+        android:text="Pressure"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/humidTxt"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:layout_below="@id/pressureTxt"
+        android:text="Humidity"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/riseTxt"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:layout_below="@id/humidTxt"
+        android:text="Sunrise"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/setTxt"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:layout_below="@id/riseTxt"
+        android:text="Sunset"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/updateTxt"
+        android:text="Last Updated"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/setTxt"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+</RelativeLayout>
